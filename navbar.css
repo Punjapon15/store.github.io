@@ -1,0 +1,66 @@
+/* รีเซ็ตเบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling สำหรับ Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #ff6f61, #de5d7d); /* สีส้มและสีชมพูสดใส */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.navbar h1 {
+    color: #fff; /* สีของหัวข้อเป็นสีขาว */
+    font-size: 28px; /* ขนาดฟอนต์ */
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* ระยะห่างระหว่างลิงค์ */
+}
+
+.navbar-links li {
+    position: relative;
+}
+
+.navbar-links li a {
+    color: #ffffff; /* สีของลิงค์เป็นสีขาว */
+    text-decoration: none;
+    font-weight: 600; /* ฟอนต์หนา */
+    padding: 8px 12px; /* padding */
+    font-size: 1.1em; /* ขยายขนาดฟอนต์ */
+    border-radius: 5px; /* มุมมน */
+    transition: background-color 0.3s, color 0.3s; /* เปลี่ยนสีเมื่อ hover */
+}
+
+.navbar-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* สีพื้นหลังเมื่อ hover */
+    color: #ffeb3b; /* เปลี่ยนสีฟอนต์เมื่อ hover เป็นสีเหลือง */
+}
+
+.navbar-links li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px; /* ตำแหน่งเส้นใต้ */
+    left: 0;
+    background-color: #ffeb3b; /* เปลี่ยนสีเส้นใต้เป็นสีเหลือง */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.navbar-links li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
