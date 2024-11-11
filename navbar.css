@@ -1,17 +1,16 @@
-/* รีเซ็ตเบื้องต้น */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Styling สำหรับ Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: linear-gradient(135deg, #ff6f61, #de5d7d); /* สีส้มและสีชมพูสดใส */
+    background: linear-gradient(135deg, #4caf50, #2e7d32); /* สีเขียว */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-decoration: none;
 }
@@ -44,7 +43,7 @@
 
 .navbar-links li a:hover {
     background-color: rgba(255, 255, 255, 0.3); /* สีพื้นหลังเมื่อ hover */
-    color: #ffeb3b; /* เปลี่ยนสีฟอนต์เมื่อ hover เป็นสีเหลือง */
+    color: #c8e6c9; /* เปลี่ยนสีฟอนต์เมื่อ hover เป็นสีเขียวอ่อน */
 }
 
 .navbar-links li a::before {
@@ -54,7 +53,7 @@
     height: 2px;
     bottom: -5px; /* ตำแหน่งเส้นใต้ */
     left: 0;
-    background-color: #ffeb3b; /* เปลี่ยนสีเส้นใต้เป็นสีเหลือง */
+    background-color: #c8e6c9; /* เปลี่ยนสีเส้นใต้เป็นสีเขียวอ่อน */
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s ease;
