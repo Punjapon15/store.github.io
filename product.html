@@ -8,6 +8,36 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+    <style>
+    .custom-toast {
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+    .custom-toast .toast-header {
+        background-color: #28a745;
+        color: #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 0.75rem 1rem;
+    }
+    .custom-toast .toast-body {
+        background-color: #e6ffed;
+        color: #155724;
+        font-size: 16px;
+        padding: 1rem;
+        text-align: center;
+    }
+    .custom-toast .btn-close {
+        filter: brightness(90%);
+        color: #fff;
+    }
+    .custom-toast .btn-close:hover {
+        filter: brightness(70%);
+    }
+    .toast-body .emoji {
+        font-size: 1.5em;
+    }
+</style>
 <body>
 
     <header style="background-color: white;">
@@ -99,7 +129,6 @@
         </div>
     </section>
 
-<!-- Toast Notification -->
 <div class="toast-container position-fixed bottom-0 end-0 p-3">
     <div id="orderToast" class="toast custom-toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
@@ -109,49 +138,10 @@
             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
         <div class="toast-body">
-            🎉 สั่งซื้อสำเร็จครับพี่! ขอบคุณที่สั่งซื้อสินค้ากับเรา!
+            🎉 สั่งซื้อสำเร็จ ขอบคุณที่สั่งซื้อสินค้ากับเรา!
         </div>
     </div>
 </div>
-
-<!-- CSS Styling -->
-<style>
-    /* Custom styling for the Toast */
-    .custom-toast {
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-    }
-    .custom-toast .toast-header {
-        background-color: #28a745;
-        color: #fff;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        padding: 0.75rem 1rem;
-    }
-    .custom-toast .toast-body {
-        background-color: #e6ffed;
-        color: #155724;
-        font-size: 16px;
-        padding: 1rem;
-        text-align: center;
-    }
-    .custom-toast .btn-close {
-        filter: brightness(90%);
-        color: #fff;
-    }
-    .custom-toast .btn-close:hover {
-        filter: brightness(70%);
-    }
-    .toast-body .emoji {
-        font-size: 1.5em;
-    }
-</style>
-
-<!-- Icons and Bootstrap JS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
 
     <div id="footer-placeholder"></div>
 
