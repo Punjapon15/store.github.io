@@ -3,41 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CASIO</title>
+    <title>Computer Set - MSI 3 </title>
     <link rel="stylesheet" href="page.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+    <style>
+    .custom-toast {
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+    .custom-toast .toast-header {
+        background-color: #28a745;
+        color: #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 0.75rem 1rem;
+    }
+    .custom-toast .toast-body {
+        background-color: #e6ffed;
+        color: #155724;
+        font-size: 16px;
+        padding: 1rem;
+        text-align: center;
+    }
+    .custom-toast .btn-close {
+        filter: brightness(90%);
+        color: #fff;
+    }
+    .custom-toast .btn-close:hover {
+        filter: brightness(70%);
+    }
+    .toast-body .emoji {
+        font-size: 1.5em;
+    }
+</style>
 <body>
 
-        <div id="navbar-placeholder"></div>
-    
-    <header>
-        <h1>CASIO</h1>
+    <div id="navbar-placeholder"></div>
+
+    <header class="text-center my-4">
+        <h1>Computer Set - MSI 3 </h1>
     </header>
-    <div class="product-detail">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqTCFqfjRtEoA-E5XdwHBNFD_XAEFFuNPc0A&s" alt="ตุ๊กตาแมว 3 สี">
-        <h2>CASIO</h2>
-        <p>นาฬิกาข้อมือผู้ชาย NF9150 D สายสแตนเลส 45 มม. สีดำา</p>
-        <p class="price">ราคา: 850 บาท</p>
+
+    <div class="product-detail text-center">
+        <img src="https://media-cdn.bnn.in.th/441993/msi-com-expo-27-square_medium.jpg" alt="Computer Set - MSI 3 " class="img-fluid">
+        <h2>Computer Set - MSI 3 </h2>
+        <p>(i5-13400F | RAM16GB/3200 | SSD 500GB | GTX1650)</p>
+        <p class="price">ราคา: 17,590 บาท</p>
         <button onclick="addToCart()">สั่งซื้อ</button>
-<button onclick="history.back()" class="btn btn-secondary ms-2">ย้อนกลับ</button>
+        <button onclick="history.back()" class="btn btn-secondary ms-2">ย้อนกลับ</button>
     </div>
 
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div id="orderToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-                <strong class="me-auto">การสั่งซื้อ</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body bg-success text-white">
-                สั่งซื้อสำเร็จจ้า!
-            </div>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="orderToast" class="toast custom-toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+            <strong class="me-auto">การสั่งซื้อ</strong>
+            <small>ตอนนี้</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            🎉 สั่งซื้อสำเร็จ ขอบคุณที่สั่งซื้อสินค้ากับเรา!
         </div>
     </div>
+</div>  
 
-
- <div id="footer-placeholder"></div>
+    <div id="footer-placeholder"></div>
 
     <script>
         fetch('navbar.html')
@@ -58,6 +90,6 @@
             toast.show();
         }
     </script>
-    
+
 </body>
 </html>
