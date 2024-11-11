@@ -1,11 +1,10 @@
-/* รีเซ็ตเบื้องต้น */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Styling สำหรับ Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -17,23 +16,24 @@
 }
 
 .navbar h1 {
-    color: #fff; /* สีของหัวข้อเป็นสีขาว */
-    font-size: 28px; /* ขนาดฟอนต์ */
+    color: #fff; 
+    font-size: 28px;
     font-weight: bold;
 }
 
 .navbar-links {
     list-style: none;
     display: flex;
-    gap: 25px; /* ระยะห่างระหว่างลิงค์ */
+    gap: 25px; 
 }
 
 .navbar-links li {
     position: relative;
 }
 
+
 .navbar-links li a {
-    color: #ffffff; /* สีของลิงค์เป็นสีขาว */
+    color: #ffffff; 
     text-decoration: none;
     font-weight: 600; /* ฟอนต์หนา */
     padding: 8px 12px; /* padding */
@@ -43,7 +43,6 @@
 }
 
 .navbar-links li a:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* สีพื้นหลังเมื่อ hover */
     color: #64b5f6; /* เปลี่ยนสีฟอนต์เมื่อ hover เป็นสีฟ้าอ่อน */
 }
 
