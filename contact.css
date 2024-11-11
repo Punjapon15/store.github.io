@@ -1,11 +1,10 @@
-/* รีเซ็ตเบื้องต้น */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Styling สำหรับ Contact Section */
 .contact-container {
     display: flex;
     flex-direction: column;
@@ -13,21 +12,23 @@
     justify-content: center;
     min-height: 100vh;
     padding: 40px;
-    background: linear-gradient(135deg, #4a90e2, #50e3c2); /* เปลี่ยนสีพื้นหลังให้สดใส */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); 
     color: #ffffff;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px; /* มุมมน */
+    border-radius: 10px; 
 }
 
 .contact-container h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    color: #50e3c2; /* สีเขียวมิ้นต์ */
 }
 
 .contact-container p {
     font-size: 1.2em;
     margin-bottom: 30px;
+    color: #b0c4de; /* สีฟ้าอ่อน */
 }
 
 /* Styling สำหรับไอคอน Social */
@@ -40,7 +41,7 @@
     width: 60px;
     height: 60px;
     background-color: #ffffff;
-    color: #2575fc;
+    color: #1e90ff;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -51,7 +52,7 @@
 }
 
 .social-icons .icon:hover {
-    background-color: #2575fc;
+    background-color: #1e90ff; /* สีฟ้าไอที */
     color: #ffffff;
 }
 
